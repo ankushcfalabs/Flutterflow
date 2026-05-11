@@ -33,6 +33,13 @@ migrate_working_dir/
 /build/
 /coverage/
 
+.packages
+build/
+ios/Pods/
+android/.gradle/
+android/app/build/
+.vscode/
+
 # Symbolication related
 app.*.symbols
 

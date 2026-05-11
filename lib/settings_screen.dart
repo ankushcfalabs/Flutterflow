@@ -63,14 +63,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _SettingsCard(
-              title: '🤖 OpenAI API Key',
+              title: '🤖 Gemini API Key',
               subtitle: 'Required for Widget Generator & Standup AI',
               child: TextField(
                 controller: _openAIController,
                 obscureText: _obscureKey,
                 style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration(
-                  hintText: 'sk-...',
+                  hintText: 'AIza...',
                   suffixIcon: IconButton(
                     icon: Icon(
                         _obscureKey ? Icons.visibility : Icons.visibility_off,
@@ -160,8 +160,8 @@ class _InfoCard extends StatelessWidget {
                     color: Colors.white)),
             const SizedBox(height: 10),
             _InfoRow(
-              label: 'OpenAI API Key',
-              value: 'platform.openai.com → API Keys',
+              label: 'Gemini API Key',
+              value: 'aistudio.google.com/apikey',
             ),
             const SizedBox(height: 6),
             _InfoRow(
